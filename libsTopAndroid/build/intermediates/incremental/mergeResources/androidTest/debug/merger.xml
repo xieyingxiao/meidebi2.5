@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="debug"><source path="E:\androidStudioProject\meidebi2.5\libsTopAndroid\build\intermediates\bundles\debug\res"/></dataSet><dataSet config="main"><source path="E:\androidStudioProject\meidebi2.5\libsTopAndroid\src\androidTest\res"/><source path="E:\androidStudioProject\meidebi2.5\libsTopAndroid\build\generated\res\rs\androidTest\debug"/><source path="E:\androidStudioProject\meidebi2.5\libsTopAndroid\build\generated\res\generated\androidTest\debug"/></dataSet><mergedItems/></merger>

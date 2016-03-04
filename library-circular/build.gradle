@@ -1,0 +1,24 @@
+apply plugin: 'com.android.library'
+repositories {
+    mavenCentral()
+}
+android {
+    compileSdkVersion project.ANDROID_COMPILE_SDK_VERSION
+    buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION
+
+    defaultConfig {
+        minSdkVersion project.ANDROID_MIN_SDK_VERSION
+        targetSdkVersion project.ANDROID_TARGET_SDK_VERSION
+        versionName project.VERSION_NAME
+        versionCode 1
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+//apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
+
+dependencies {
+    compile 'com.nineoldandroids:library:2.4.0'
+}
