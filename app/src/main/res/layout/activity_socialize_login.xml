@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/Login_so_sina_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="新浪微博登陆" />
+    <Button android:id="@id/Login_so_qq_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="qq登陆" />
+    <Button android:id="@id/Login_so_taobao_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="淘宝登陆" />
+</LinearLayout>

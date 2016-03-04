@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_bg" >
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_marginTop="?actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/iv_coupon_intro"
+                android:layout_width="100dip"
+                android:layout_margin="@dimen/layout_padding_small"
+                android:layout_height="100dip" />
+ 
+                <View
+                    android:layout_height="@dimen/divider_height"
+                    android:layout_width="fill_parent"
+                    android:background="@drawable/list_divider"
+                    />
+                <include layout="@layout/layout_coupon_detail_info" />
+            <View
+                android:layout_height="@dimen/divider_height"
+                android:layout_width="fill_parent"
+                android:background="@drawable/list_divider"
+                />
+            <TextView
+                style="@style/Text_fourteensp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_padding"
+                android:layout_marginTop="@dimen/layout_padding_small"
+                 android:layout_marginRight="@dimen/layout_padding"
+                android:text="优惠券说明"
+                  />
+
+            <WebView
+                android:id="@+id/tv_coupon_useinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!--<FrameLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="@dimen/bottom_tab_height"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@color/tab_bottom_bg" >-->
+
+        <!--<info.hoang8f.widget.FButton-->
+            <!--android:id="@+id/btn_coupon_detail_goto_browser"-->
+            <!--style="@style/Text_sixteensp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginBottom="5dip"-->
+            <!--android:layout_marginTop="5dip"-->
+            <!--android:background="@drawable/btn_red_sel"-->
+            <!--android:clickable="true"-->
+            <!--android:paddingBottom="5dip"-->
+            <!--android:paddingLeft="50dip"-->
+            <!--android:paddingRight="50dip"-->
+            <!--android:paddingTop="5dip"-->
+            <!--android:text="@string/msg_gotoBrowser"-->
+            <!--fab:buttonColor = "@color/btn_red_normal"-->
+            <!--fab:cornerRadius="2dip"-->
+            <!--fab:shadowEnabled="false"-->
+            <!--android:textColor="@color/white" />-->
+    <!--</FrameLayout>-->
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottom_tab_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/tab_bottom_bg"
+        layout="@layout/layout_msg_detail_btn_group"/>
+
+    <ViewStub
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@id/common_layout_loading"
+        android:layout="@layout/common_loading" />
+
+</RelativeLayout>

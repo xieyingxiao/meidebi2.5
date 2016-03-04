@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/ll_tv_adapter_comment_head"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/layout_padding"
+    android:paddingRight="@dimen/layout_padding"
+    android:paddingBottom="@dimen/layout_padding_small"
+    android:paddingTop="@dimen/layout_padding_small"
+    android:background="@drawable/list_item_sel"
+    android:visibility="visible" >
+    <include
+        android:id="@+id/layout_user_attention"
+        layout="@layout/layout_user_comment"/>
+
+
+
+    <include
+        android:layout_below="@id/layout_user_attention"
+        android:id="@+id/ll_adapter_quoto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_padding_small"
+        layout="@layout/layout_comment_content"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/ll_replay_to"
+        android:layout_below="@id/ll_adapter_quoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_padding_small"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="回复"
+            android:textColor="#ff999999" />
+
+        <TextView
+            android:id="@id/tv_adapter_comment_head_replyto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5.0sp"
+            android:textColor="@color/selction_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="："
+            android:textColor="#ff999999" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_below="@id/ll_replay_to"
+        android:id="@+id/tv_adapter_comment_floor_content"
+        style="@style/Text_Commenttext"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/layout_padding_small"
+        android:text="2222222222222222222222222222222222222222" />
+
+
+<View
+android:layout_width="10dip"
+    android:layout_height="10dip"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:id="@+id/sub_view"
+    android:layout_marginRight="90dp"
+     />
+
+
+</RelativeLayout>

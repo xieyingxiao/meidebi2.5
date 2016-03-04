@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="AppTheme.Base">
+
+         <item name="dropDownListViewStyle">@style/MyDropDownListView</item>
+        <item name="android:dropDownListViewStyle">@style/MyDropDownListView</item>
+   </style>
+
+    <style name="AppTheme.Toolbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/titlebar_bg</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/text_gery_color</item>
+        <item name="android:layout_height">@dimen/actionbar_height</item>
+
+
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/titlebar_bg</item>
+        <item name="colorPrimaryDark">@color/text_gery_color</item>
+         <item name="windowActionBar">false</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="colorAccent">@color/text_gery_color</item>
+         <item name="android:textColorPrimary">@color/text_gery_color</item>
+        <item name="colorControlNormal">#999999</item>
+        <item name="colorControlActivated">#fd7a0f</item>
+        <item name="colorControlHighlight">#fd7a0f</item>
+         <item name="android:actionBarStyle">@style/CustomActionBar</item>
+        <item name="actionBarStyle">@style/CustomActionBar</item>
+        <item name="editTextColor">@color/text_black_color</item>
+
+    </style>
+    <style name="Text_Switch" parent="TextAppearance.AppCompat"  >
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_black_color</item>
+        </style>
+
+
+    <style name="CustomActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--<item name="titleTextStyle">@style/AppTheme.ActionBar.TitleText</item>-->
+        <!--<item name="android:titleTextStyle">@style/AppTheme.ActionBar.TitleText</item>-->
+        <item name="android:height">@dimen/actionbar_height</item>
+        <item name="height">@dimen/actionbar_height</item>
+
+    </style>
+
+    <style name="MainSwitchCompat" >
+
+        <item name="android:textOn">"精"</item>
+        <item name="android:textOff">"新"</item>
+    </style>
+</resources>

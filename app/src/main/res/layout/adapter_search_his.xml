@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/layout_adapter_search_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_sel"
+    android:orientation="vertical"
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip" >
+
+    <TextView
+        android:id="@id/tv_adapter_search_text"
+        style="@style/Text_fifteensp"
+        android:layout_width="fill_parent"
+        android:paddingBottom="12.5dip"
+        android:paddingTop="12.5dip"
+        android:text="222"
+        android:textColor="#ff727272" />
+
+    <ImageButton
+        android:id="@id/iv_adapter_search_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_del"
+        android:visibility="invisible" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/list_divider" />
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/bottom_tab_height"
+    android:layout_weight="1"
+      android:orientation="vertical" >
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_tab_mine"
+        android:layout_marginTop="3dip" />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/image"
+        android:id="@+id/text"
+        style="@style/Text_twelvesp"
+        android:paddingTop="1dip"
+        android:paddingBottom="1dip"
+        android:text="优惠"
+        android:textColor="@color/tab_bottom_text_color" />
+    <ImageView
+        android:layout_marginTop="2dip"
+        android:visibility="gone"
+        android:id="@+id/iv_msg_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/iv_msg_num"
+         android:layout_toRightOf="@id/image"
+        />
+</RelativeLayout>

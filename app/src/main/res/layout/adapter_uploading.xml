@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/ll_adapter_main_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_sel"
+    android:paddingBottom="@dimen/layout_padding_small"
+    android:paddingRight="@dimen/layout_padding" >
+
+
+
+    <ImageView
+        android:id="@id/adapter_main_item_img"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/layout_padding"
+        android:layout_marginTop="@dimen/layout_padding_small"
+        android:scaleType="centerCrop"
+        />
+
+
+
+    <TextView
+        android:id="@id/adapter_main_item_tx_title"
+        android:layout_alignParentTop="true"
+        style="@style/Text_mainListTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:layout_marginTop="@dimen/layout_padding_small"
+        android:layout_marginLeft="@dimen/layout_padding_small"
+        android:layout_toRightOf="@id/adapter_main_item_img"
+        android:maxLines="2"
+        android:text="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+        />
+
+
+
+
+
+
+
+
+    <TextView
+        android:layout_below="@id/adapter_main_item_tx_title"
+        android:id="@+id/tv_adapter_main_item_time"
+        style="@style/Text_elvensp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/adapter_main_item_tx_title"
+        android:text="@string/pre_my_show_time"
+        android:layout_marginTop="5dip"
+        android:textColor="@color/text_gery_color" />
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/adapter_main_item_tx_title"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:layout_alignLeft="@id/adapter_main_item_tx_title"
+        android:layout_alignRight="@id/adapter_main_item_tx_title"
+        >
+        <TextView
+            android:id="@+id/tv_adapter_my_upload_status"
+            style="@style/Text_elvensp"
+            android:layout_alignLeft="@id/adapter_main_item_tx_title"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:textColor="@color/text_gery_color"
+            android:text="上传中"
+            />
+        <com.daimajia.numberprogressbar.NumberProgressBar
+            android:id="@+id/upload_progress"
+            android:layout_width="wrap_content"
+             app:progress="0"
+            style="@style/NumberProgressBar_Default"
+            app:progress_text_color="@color/app_main_color"
+            app:progress_reached_color="@color/app_main_color"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:id="@id/parent_layout"
+    android:orientation="vertical">
+   <com.github.ksoichiro.android.observablescrollview.ObservableScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?actionBarSize"
+
+       android:overScrollMode="never">
+
+        <LinearLayout
+            android:id="@+id/ll_web"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_bg"
+
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/ll_img"
+                 android:minHeight="@dimen/detail_img_min_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--<ImageView-->
+                    <!--android:scaleType="centerCrop"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:id="@+id/iv_blur"-->
+                    <!--/>-->
+                <ImageView
+                     android:id="@+id/image"
+                    android:padding="@dimen/layout_padding"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                     android:layout_gravity="center_horizontal"
+                     />
+
+
+
+
+          </FrameLayout>
+
+            <include
+                layout="@layout/layout_msg_detail_intro"
+                />
+
+
+            <LinearLayout
+                android:background="@color/app_bg"
+                android:layout_marginRight="@dimen/layout_padding"
+                android:layout_marginLeft="@dimen/layout_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+
+
+                <com.meidebi.app.ui.view.roundedview.RoundedImageView
+                    android:id="@+id/iv_user_avantar"
+                    android:layout_width="@dimen/avantar_size"
+                    android:layout_height="@dimen/avantar_size"
+                    android:src="@drawable/iv_no_avantar"
+                    app:border_color="@color/grey"
+                    app:border_width="1dip"
+                    app:corner_radius="360.0dip" />
+
+
+
+                <TextView
+                    android:text="222"
+                    android:layout_marginLeft="@dimen/layout_padding_small"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/tv_user_name"
+                    style="@style/Text_fifteensp"
+                    android:textColor="@color/text_dark_gery_color"
+                    />
+
+                <TextView
+                    android:layout_marginLeft="@dimen/layout_padding_small"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/tv_post_time"
+                    style="@style/Text_elvensp"
+                    android:textColor="@color/text_dark_gery_color"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+
+
+            <include
+                layout="@layout/layout_detail_webview"
+                />
+
+        </LinearLayout>
+    </com.github.ksoichiro.android.observablescrollview.ObservableScrollView>
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="?attr/colorPrimary"-->
+        <!--android:minHeight="?attr/actionBarSize"-->
+
+
+        <!--app:theme="@style/Toolbar"-->
+
+        <!--app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar" />-->
+
+<include layout="@layout/toolbar"/>
+
+    <!--<com.melnykov.fab.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:scaleType="center"-->
+        <!--app:fab_colorNormal="@color/titlebar_bg"-->
+        <!--app:fab_colorPressed="@color/yellow" />-->
+
+
+    <include
+        android:layout_alignParentBottom="true"
+        android:id="@+id/tab_bottom"
+        layout="@layout/layout_msg_detail_btn_group"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottom_tab_height"
+        android:layout_gravity="bottom" />
+
+</RelativeLayout>

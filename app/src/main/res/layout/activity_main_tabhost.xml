@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/realtabcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/bottom_tab"
+        android:layout_gravity="bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <View
+        android:layout_above="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@drawable/tab_divider"
+        />
+    <android.support.v4.app.FragmentTabHost
+        android:id="@android:id/tabhost"
+         android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_tab_height"
+        android:background="@color/tab_bottom_bg"
+        android:showDividers="none" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0" />
+    </android.support.v4.app.FragmentTabHost>
+</LinearLayout>
+</FrameLayout>

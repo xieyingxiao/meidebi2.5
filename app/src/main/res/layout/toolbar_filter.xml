@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <ImageButton
+        android:id="@+id/toolbar_main_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_menu_search_sel"
+        android:layout_gravity="center_vertical"
+        android:background="@null"
+        android:paddingRight="8dip"
+        />
+
+    <RadioGroup
+        android:id="@+id/rg_toolbar_fliter"
+        android:paddingTop="4dip"
+        android:paddingBottom="4dip"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+         >
+        <RadioButton
+            android:id="@+id/rb_toolbar_fliter_hot"
+            android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:button="@null"
+         android:background="@drawable/rb_toolbar_fliter_hot_sel"
+        />
+        <RadioButton
+            android:id="@+id/rb_toolbar_fliter_all"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:button="@null"
+            android:background="@drawable/rb_toolbar_fliter_all_sel"
+            />
+        </RadioGroup>
+</LinearLayout>

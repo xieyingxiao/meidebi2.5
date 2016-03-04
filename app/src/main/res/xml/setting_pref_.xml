@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:holo="http://schemas.android.com/apk/res-auto" >
+
+    <Preference android:title="@string/pref_push" >
+        <intent
+            android:targetClass="com.meidebi.app.ui.setting.PushSettingActivity"
+            android:targetPackage="com.meidebi.app" />
+    </Preference>
+    <CheckBoxPreference
+        android:id="@+id/pref_enble_pic"
+        android:defaultValue="true"
+        android:key="pic"
+        android:summaryOff="@string/pref_close"
+        android:summaryOn="@string/pref_open"
+        android:title="@string/pref_load_pic_open" />
+    <!--<CheckBoxPreference-->
+        <!--android:id="@+id/pref_enble_auto_refresh"-->
+        <!--android:defaultValue="false"-->
+        <!--android:key="refresh"-->
+        <!--android:summaryOff="@string/pref_close"-->
+        <!--android:summaryOn="@string/pref_open"-->
+        <!--android:title="@string/pref_auto_refresh" />-->
+
+
+
+    <Preference
+        android:key="clean"
+        android:title="@string/pref_clear_cache" >
+    </Preference>
+
+    <Preference
+        android:key="market"
+        android:title="@string/pref_market" >
+    </Preference>
+
+    <!--     </PreferenceCategory>
+     --><!--     <PreferenceCategory android:title="@string/pref_cat_about" >
+ -->        <Preference android:title="@string/pref_feeback" >
+    <intent
+        android:targetClass="com.meidebi.app.ui.setting.FeedBackActivity"
+        android:targetPackage="com.meidebi.app" />
+</Preference>
+
+    <!--         <Preference
+                android:key="update"
+                android:title="@string/pref_update" >
+            </Preference> -->
+
+    <!--     </PreferenceCategory>
+     --><!--     <PreferenceCategory android:title="@string/pref_cat_other" >
+ -->
+    <Preference android:key="update" android:title="@string/pref_update" >
+
+    </Preference>
+    <!--         <Preference
+                android:key="loginout"
+                android:title="@string/pref_loginout" >
+            </Preference> -->
+    <!--         <Preference
+                android:key="exit"
+                android:title="@string/pref_exit" >
+            </Preference> -->
+
+</PreferenceScreen>

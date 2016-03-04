@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/ll_adapter_main_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_sel"
+    android:paddingBottom="@dimen/layout_padding_small"
+    android:paddingRight="@dimen/layout_padding" >
+
+
+
+    <ImageView
+         android:id="@id/adapter_main_item_img"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+         android:layout_marginLeft="@dimen/layout_padding"
+        android:layout_marginTop="@dimen/layout_padding_small" />
+
+    <TextView
+        android:id="@id/tv_adapter_main_item_site"
+        style="@style/Text_elvensp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_padding_small"
+        android:layout_marginTop="7.8dip"
+        android:layout_toRightOf="@id/adapter_main_item_img"
+         android:text="2222"
+        android:textColor="@color/text_gery_color" />
+
+    <TextView
+        android:id="@+id/tv_adapter_main_item_time"
+        style="@style/Text_elvensp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="7.8dip"
+        android:text="222"
+
+        android:textColor="@color/text_gery_color" />
+
+
+
+    <TextView
+        android:id="@id/adapter_main_item_tx_good"
+        style="@style/Text_tensp"
+        android:layout_alignBottom="@id/adapter_main_item_img"
+         android:layout_alignLeft="@id/tv_adapter_main_item_site"
+        android:drawableLeft="@drawable/ic_main_good"
+        android:drawablePadding="8dip"
+        android:gravity="center_vertical"
+        android:text="222"
+        android:textColor="@color/text_dark_gery_color" />
+
+
+
+
+    <TextView
+        android:id="@id/adapter_main_item_tx_comment"
+        style="@style/Text_tensp"
+        android:layout_alignBottom="@id/adapter_main_item_img"
+        android:layout_marginLeft="21.0dip"
+        android:drawableLeft="@drawable/ic_main_comment"
+        android:layout_toRightOf="@id/adapter_main_item_tx_good"
+        android:drawablePadding="8dip"
+        android:gravity="center_vertical"
+        android:text="222"
+        android:textColor="@color/text_dark_gery_color" />
+
+
+
+    <LinearLayout
+        android:layout_alignLeft="@id/tv_adapter_main_item_site"
+        android:layout_below="@id/tv_adapter_main_item_site"
+        android:layout_above="@id/adapter_main_item_tx_good"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_marginTop="4.6dip"
+        >
+        <TextView
+            android:id="@id/adapter_main_item_tx_title"
+            style="@style/Text_mainListTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="222222222222222222222222222222222222222222222222222222222"
+
+            />
+
+
+        <TextView
+            android:visibility="visible"
+            android:layout_alignLeft="@id/tv_adapter_main_item_site"
+            android:id="@id/adapter_main_item_tx_price"
+            android:layout_above="@id/adapter_main_item_tx_good"
+            android:layout_below="@id/adapter_main_item_tx_title"
+            android:layout_marginTop="3.6dip"
+            android:layout_marginBottom="3.6dip"
+            android:includeFontPadding="false"
+            android:text="222"
+            style="@style/Text_mainListPrice" />
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/tv_adapter_flag"
+        style="@style/Text_twelvesp"
+        android:background="@drawable/bg_tv_timeout"
+        android:text="过期"
+        android:textColor="@color/white"
+        />
+
+</RelativeLayout>

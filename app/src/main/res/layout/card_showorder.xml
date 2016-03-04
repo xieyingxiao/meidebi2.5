@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_item_sel"
+    android:paddingTop="@dimen/layout_padding"
+    android:paddingLeft="@dimen/layout_padding"
+    android:paddingRight="@dimen/layout_padding"
+    android:paddingBottom="@dimen/layout_padding"
+
+    >
+ <include
+     android:id="@+id/ll_card_cover"
+     layout="@layout/layout_card_cover"/>
+
+    <include
+        android:id="@+id/ll_user_name"
+        android:layout_below="@id/ll_card_cover"
+        android:layout_marginTop="@dimen/layout_padding_small"
+        android:layout_marginBottom="@dimen/layout_padding_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_user_attention"/>
+
+
+
+
+    <TextView
+         android:id="@+id/adapter_content"
+        style="@style/Text_twelvesp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_user_name"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:lineSpacingExtra="6dip"
+        android:maxLines="4"
+
+        android:layout_marginLeft="4dip"
+        android:layout_marginRight="4dip"
+        android:textColor="@color/text_dark_gery_color" />
+
+
+
+
+
+    <LinearLayout
+         android:layout_alignTop="@id/ll_user_name"
+        android:layout_alignBottom="@id/ll_user_name"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        >
+
+
+
+
+
+        <TextView
+            android:layout_alignBottom="@id/ll_user_name"
+            android:id="@+id/adapter_like"
+            style="@style/Text_tensp"
+             android:layout_marginRight="@dimen/layout_padding"
+             android:layout_toLeftOf="@id/adapter_comment"
+            android:drawableLeft="@drawable/ic_main_good"
+            android:drawablePadding="@dimen/layout_padding_small"
+            android:text="已赞"
+            android:textColor="@color/text_dark_gery_color" />
+
+
+        <TextView
+            android:id="@+id/adapter_comment"
+            style="@style/Text_tensp"
+             android:drawableLeft="@drawable/ic_main_comment"
+            android:drawablePadding="@dimen/layout_padding_small"
+            android:text="评论"
+            android:textColor="@color/text_dark_gery_color" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

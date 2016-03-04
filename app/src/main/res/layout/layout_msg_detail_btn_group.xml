@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tab_bottom_bg"
+
+    android:orientation="vertical"
+    >
+    <View
+         android:layout_width="fill_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/tab_divider"
+        />
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/tab_height"
+    android:orientation="horizontal" >
+
+
+    <LinearLayout
+        android:id="@+id/ll_tv_good"
+        style="@style/Layout_DivideHorizalBtnGroup" >
+
+        <TextView
+
+             android:gravity="center_vertical"
+            android:id="@id/btn_msg_detail_good"
+            style="@style/base_textBase"
+            android:drawableLeft="@drawable/ic_detail_good_sel"
+            android:drawablePadding="@dimen/layout_padding_small"
+            android:textColor="@color/text_gery_color" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/Layout_DivideHorizalBtnGroup" >
+
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@id/btn_msg_detail_fav"
+            style="@style/base_textBase"
+            android:drawableLeft="@drawable/ic_detail_fav_sel"
+            android:drawablePadding="@dimen/layout_padding_small"
+            android:textColor="@color/text_gery_color" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/Layout_DivideHorizalBtnGroup" >
+
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@id/btn_msg_detail_comment"
+            style="@style/base_textBase"
+            android:drawableLeft="@drawable/ic_detail_comment_sel"
+            android:drawablePadding="@dimen/layout_padding_small"
+            android:textColor="@color/text_gery_color" />
+    </LinearLayout>
+
+    <info.hoang8f.widget.FButton
+         android:id="@id/btn_msg_detail_goto_browser"
+         android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.2"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="5dip"
+
+        android:layout_marginRight="16.5dp"
+         android:gravity="center"
+        android:text="@string/msg_gotoBrowser"
+        fab:buttonColor = "@color/btn_red_normal"
+        fab:cornerRadius="2dip"
+        fab:shadowEnabled="false"
+        android:textSize="16.0sp"
+        android:textColor="@color/white" />
+
+</LinearLayout>
+</LinearLayout>

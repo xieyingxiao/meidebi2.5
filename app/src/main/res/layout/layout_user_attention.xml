@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+      android:orientation="horizontal" >
+
+
+
+    <com.meidebi.app.ui.view.roundedview.RoundedImageView
+        android:id="@+id/iv_user_avantar"
+        android:layout_width="@dimen/avantar_size"
+        android:layout_height="@dimen/avantar_size"
+        android:src="@drawable/iv_no_avantar"
+        app:border_color="@color/grey"
+        app:border_width="1dip"
+        app:corner_radius="360.0dip" />
+
+
+
+        <TextView
+             android:layout_marginLeft="@dimen/layout_padding_small"
+            android:layout_gravity="center_vertical"
+            android:id="@id/tv_user_name"
+            style="@style/Text_fifteensp"
+             android:textColor="@color/text_dark_gery_color"
+            />
+
+        <TextView
+            android:layout_marginLeft="@dimen/layout_padding_small"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/tv_post_time"
+            style="@style/Text_elvensp"
+            android:textColor="@color/text_dark_gery_color"
+            android:visibility="gone"
+            />
+
+</LinearLayout>

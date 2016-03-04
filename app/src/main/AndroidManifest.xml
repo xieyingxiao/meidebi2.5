@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.meidebi.app"
+    android:installLocation="auto"
+    android:versionCode="301"
+    android:versionName="3.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="21" />
+
+    <!-- <permission -->
+    <!-- android:name="com.meidebi.app.permission.JPUSH_MESSAGE" -->
+    <!-- android:protectionLevel="signature" /> -->
+
+
+    <!-- <uses-permission android:name="com.meidebi.app.permission.JPUSH_MESSAGE" /> -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.meidebi.app.XApplication"
+        android:allowBackup="true"
+        android:exported="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.meidebi.app.ui.main.SplashActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/splash_style" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.tauth.AuthActivity" />
+        <activity
+            android:name="com.umeng.socialize.view.CommentActivity"
+            android:configChanges="keyboard|orientation"
+            android:theme="@style/Theme.UMDefault" />
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="keyboard|orientation"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.umeng.socialize.view.QQShareActivity"
+            android:configChanges="keyboard|orientation"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.umeng.socialize.view.CommentDetail"
+            android:configChanges="keyboard|orientation"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDefault" />
+        <activity
+            android:name="com.umeng.socialize.view.CommentDetailNoMap"
+            android:configChanges="keyboard|orientation"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDefault" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5245613d56240b0c0800125c" />
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="26a667c7e9e3fa036e0f7aed4a033f36" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" />
+
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="false" />
+
+        <activity
+            android:name="com.umeng.fb.ConversationActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name="com.umeng.fb.ContactActivity" />
+        <activity android:name="com.tencent.plus.ImageActivity" />
+        <!-- 友盟自动更新 -->
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" >
+        </activity>
+
+        <meta-data
+            android:name="api_key"
+            android:value="jq5SKmVnuMR1Ch1qljFz6fFb" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.meidebi.app.ui.main.MainTabActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.meidebi.app.ui.main.MainTabHostActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.meidebi.app.ui.main.GuideActivity"
+            android:theme="@style/splash_style" />
+        <activity
+            android:name="com.meidebi.app.ui.msgdetail.MsgDetailActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.meidebi.app.ui.msgdetail.OrderShowDetailActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.meidebi.app.ui.msgdetail.CouponDetailActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.meidebi.app.ui.submit.PostNewsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/iwantpost"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.meidebi.app.ui.submit.post_guide_activity"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.meidebi.app.ui.submit.CommentActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.meidebi.app.ui.submit.CommentEditSubmitActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.meidebi.app.ui.user.LoginActivity"
+            android:configChanges="orientation|screenSize" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="com.meidebi.app" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.meidebi.app.ui.user.RegisitActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.meidebi.app.ui.user.LoginForgetActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.meidebi.app.ui.user.UserCenterActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.meidebi.app.ui.commonactivity.CommonFragmentActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.meidebi.app.ui.user.ScoreDirectionVpActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.meidebi.app.ui.user.UserFavActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.meidebi.app.ui.browser.BrowserWebActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.meidebi.app.ui.browser.BrowserImgActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.meidebi.app.ui.picker.BrowserDelActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.meidebi.app.ui.setting.PushContentSettingActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.meidebi.app.ui.setting.SettingActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.meidebi.app.ui.setting.PushSettingActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.meidebi.app.ui.setting.AboutUsActvity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.meidebi.app.ui.setting.PushManualLocationActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.meidebi.app.ui.setting.FeedBackActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.meidebi.app.ui.search.SearchActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="com.meidebi.app.ui.search.SearchResultActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name="com.meidebi.app.ui.picker.PickerActivity" />
+        <activity android:name="com.meidebi.app.ui.picker.BrowserPickImageActivity" />
+
+        <service
+            android:name="com.meidebi.app.support.component.uploadservice.UploadService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.meidebi.app.action.upload" />
+            </intent-filter>
+        </service>
+        <service android:name="com.meidebi.app.support.component.UploadImageService" />
+
+        <receiver
+            android:name="com.meidebi.app.support.component.NetWorkChangeBroadcastReceiver"
+            android:label="NetworkConnection" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <!-- 极光 -->
+        <!-- <service -->
+        <!-- android:name="cn.jpush.android.service.PushService" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="false" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="cn.jpush.android.intent.REGISTER" /> -->
+        <!-- <action android:name="cn.jpush.android.intent.REPORT" /> -->
+        <!-- <action android:name="cn.jpush.android.intent.PushService" /> -->
+        <!-- <action android:name="cn.jpush.android.intent.PUSH_TIME" /> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+
+
+        <!-- <receiver -->
+        <!-- android:name="cn.jpush.android.service.PushReceiver" -->
+        <!-- android:enabled="true" > -->
+        <!-- <intent-filter android:priority="1000" > -->
+        <!-- <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> -->
+
+
+        <!-- <category android:name="com.meidebi.app" /> -->
+        <!-- </intent-filter> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.USER_PRESENT" /> -->
+        <!-- <action android:name="android.net.conn.CONNECTIVITY_CHANGE" /> -->
+        <!-- </intent-filter> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.PACKAGE_ADDED" /> -->
+        <!-- <action android:name="android.intent.action.PACKAGE_REMOVED" /> -->
+
+
+        <!-- <data android:scheme="package" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <!-- <receiver -->
+        <!-- android:name=".support.component.jpush.JpushReceiver" -->
+        <!-- android:enabled="true" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="cn.jpush.android.intent.REGISTRATION" /> -->
+        <!-- <action android:name="cn.jpush.android.intent.UNREGISTRATION" /> -->
+        <!-- <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> -->
+        <!-- <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> -->
+        <!-- <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> -->
+        <!-- <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> -->
+
+
+        <!-- <category android:name="com.meidebi.app" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+
+
+        <!-- <activity -->
+        <!-- android:name="cn.jpush.android.ui.PushActivity" -->
+        <!-- android:configChanges="keyboardHidden|orientation" -->
+        <!-- android:theme="@*android:style/Theme.Translucent.NoTitleBar" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="cn.jpush.android.ui.PushActivity" /> -->
+
+
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- <category android:name="com.meidebi.app" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+
+
+        <!-- <service -->
+        <!-- android:name="cn.jpush.android.service.DownloadService" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="false" /> -->
+
+
+        <!-- <receiver android:name="cn.jpush.android.service.AlarmReceiver" /> -->
+
+
+        <!-- <meta-data -->
+        <!-- android:name="JPUSH_CHANNEL" -->
+        <!-- android:value="developer-default" /> -->
+        <!-- <meta-data -->
+        <!-- android:name="JPUSH_APPKEY" -->
+        <!-- android:value="b1fb1aa43328b3a28f9f62e1" /> -->
+
+
+        <!-- <receiver android:name=".support.component.jpush.JpushOnRepateAlarmReceiver" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.BOOT_COMPLETED" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <!-- <receiver android:name=".support.component.jpush.ControllAlarmReceiver" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.BOOT_COMPLETED" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+
+
+        <!-- sugardb -->
+        <meta-data
+            android:name="VERSION"
+            android:value="10" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+        <meta-data
+            android:name="DATABASE"
+            android:value="meidebi.db" />
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="com.meidebi.app.service.bean" />
+
+        <receiver
+            android:name="com.umeng.message.NotificationProxyBroadcastReceiver"
+            android:exported="false" >
+        </receiver>
+        <receiver
+            android:name="com.umeng.message.SystemReceiver"
+            android:process=":push" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.umeng.message.MessageReceiver"
+            android:process=":push" >
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="org.android.agoo.service.ElectionService"
+            android:exported="true"
+            android:process=":pushService_v1" >
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.ELECTION_V2" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.umeng.message.RegistrationReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.meidebi.app.intent.action.COMMAND" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.umeng.message.BootBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.umeng.message.UmengService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":push" >
+            <intent-filter>
+                <action android:name="com.meidebi.app.intent.action.START" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.meidebi.app.intent.action.COCKROACH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.PING_V4" />
+
+                <category android:name="umeng" />
+            </intent-filter>
+        </service>
+        <service android:name="com.umeng.message.UmengIntentService" />
+        <!-- V1.3.0添加的service，负责下载通知的资源 -->
+        <service android:name="com.umeng.message.UmengDownloadResourceService" />
+
+        <provider
+            android:name="com.meidebi.app.ui.provider.PlacesSuggestionProvider"
+            android:authorities="com.meidebi.app.search_suggestion_provider"
+            android:syncable="false" />
+    </application>
+
+</manifest>

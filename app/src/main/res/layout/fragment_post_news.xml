@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <!--
+         <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_single"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/link_type_single" />
+
+        <RadioButton
+            android:id="@+id/rb_act"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/link_type_act" />
+
+        <RadioButton
+            android:id="@+id/rb_coupon"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/link_type_coupon" />
+    </RadioGroup>
+    -->
+
+
+    <!--
+         <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dip"
+        android:src="@drawable/check_success_icon_check" />
+    -->
+
+    <com.meidebi.app.ui.view.CleanableEditText
+        android:id="@+id/et_post_url"
+        style="@style/ET_SingelInput"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@null"
+        android:cursorVisible="true"
+        android:drawableRight="@drawable/btn_clear_sel"
+        android:gravity="top|left|center"
+        android:hint="@string/hint_post_url"
+        android:singleLine="true" />
+
+    <View
+        android:id="@+id/diver"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@id/et_post_url"
+        android:background="@color/list_divider" />
+
+    <com.meidebi.app.ui.view.CleanableEditText
+        android:id="@+id/et_post_reason"
+        style="@style/ET_SingelInput"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/diver"
+        android:layout_gravity="center_vertical"
+        android:background="@null"
+        android:cursorVisible="true"
+        android:drawableRight="@drawable/btn_clear_sel"
+        android:gravity="top|left|center"
+        android:hint="@string/hint_post_reason" />
+
+    <RelativeLayout
+        android:id="@+id/ll_anonymous"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottom_layout_height"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <View
+             android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_alignParentTop="true"
+            android:background="@color/list_divider" />
+
+        <CheckBox
+            android:id="@+id/cb_anonymous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:text="@string/post_anonymous"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_jump_to_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:text="教你如何轻松爆料>>"
+            android:textColor="@drawable/link_colour"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

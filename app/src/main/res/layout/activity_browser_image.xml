@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+     >
+<com.meidebi.app.ui.browser.HackyViewPager
+    android:id="@+id/common_vp"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     />
+
+    <include
+        android:id="@+id/view_bottom_browser"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/tab_height"
+        android:layout_alignParentBottom="true"
+        layout="@layout/picker_browser_big_bottom"/>
+    <include layout="@layout/toolbar"/>
+
+</RelativeLayout>

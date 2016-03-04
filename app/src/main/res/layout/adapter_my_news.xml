@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/ll_adapter_main_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_sel"
+    android:paddingBottom="@dimen/layout_padding_small"
+     android:paddingRight="@dimen/layout_padding" >
+
+    <FrameLayout
+        android:id="@+id/ll_img"
+        android:background="@drawable/btn_gery_sel"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/layout_padding"
+        android:layout_marginTop="@dimen/layout_padding_small"
+        >
+
+
+    <ImageView
+         android:id="@id/adapter_main_item_img"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+  />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/adapter_news_from_mobile"
+        android:text="手机爆料"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        />
+
+</FrameLayout>
+
+
+    <TextView
+        android:layout_marginTop="@dimen/layout_padding_small"
+        android:id="@id/adapter_main_item_tx_title"
+        android:layout_alignParentTop="true"
+        style="@style/Text_mainListTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+         android:layout_marginLeft="@dimen/layout_padding_small"
+        android:layout_toRightOf="@id/ll_img"
+        android:text="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+      />
+
+
+
+    <TextView
+        android:layout_alignLeft="@id/adapter_main_item_tx_title"
+        android:id="@id/adapter_main_item_tx_price"
+        android:layout_below="@id/adapter_main_item_tx_title"
+        android:layout_marginTop="3.6dip"
+        android:layout_marginBottom="3.6dip"
+        android:includeFontPadding="false"
+
+        android:text="222"
+        style="@style/Text_mainListPrice" />
+
+
+
+    <TextView
+        android:id="@id/tv_adapter_main_item_site"
+        style="@style/Text_elvensp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adapter_main_item_tx_price"
+        android:layout_alignLeft="@id/adapter_main_item_tx_title"
+        android:text="@string/pre_site"
+        android:textColor="@color/text_gery_color" />
+
+
+
+    <TextView
+        android:layout_below="@id/tv_adapter_main_item_site"
+        android:id="@+id/tv_adapter_main_item_time"
+        style="@style/Text_elvensp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/adapter_main_item_tx_title"
+         android:text="@string/pre_my_new_time"
+
+        android:textColor="@color/text_gery_color" />
+
+
+
+    <TextView
+        android:layout_below="@id/tv_adapter_main_item_time"
+        android:id="@+id/tv_adapter_my_news_status"
+        style="@style/Text_elvensp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/adapter_main_item_tx_title"
+        android:text="@string/pre_status"
+        android:textColor="@color/text_gery_color" />
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/tv_adapter_flag"
+        style="@style/Text_twelvesp"
+        android:background="@drawable/bg_tv_timeout"
+        android:text="过期"
+        android:textColor="@color/white"
+        />
+
+</RelativeLayout>

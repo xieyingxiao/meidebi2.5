@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10.0dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/Text_fourteensp"
+            android:text="从" />
+
+        <NumberPicker
+            android:id="@id/np_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip" />
+
+        <TextView
+            style="@style/Text_fourteensp"
+            android:text="时到" />
+
+        <NumberPicker
+            android:id="@id/np_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip" />
+
+        <TextView
+            style="@style/Text_fourteensp"
+            android:text="时" />
+    </LinearLayout>
+
+</LinearLayout>

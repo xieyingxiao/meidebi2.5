@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meidebi.app.ui.view.SquareView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/layout_adapter_upload_item"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="5dip">
+
+    <ImageView
+        android:id="@+id/image_thumbnail"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/list_item_sel"
+        android:scaleType="centerCrop"
+        android:visibility="visible" />
+
+
+    <CheckBox
+        android:id="@+id/image_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/layout_padding_small"
+        android:button="@drawable/cb_img_seleted_sel" />
+</com.meidebi.app.ui.view.SquareView>

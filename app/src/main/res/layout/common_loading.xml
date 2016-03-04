@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/view_loading"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_bg"
+    android:gravity="center"
+    android:minHeight="300dip"
+    android:visibility="gone"
+    android:orientation="vertical" >
+
+
+
+    <fr.castorflex.android.circularprogressbar.CircularProgressBar
+        android:id="@+id/iv_load_progressBar"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:indeterminate="true"
+        android:layout_gravity="center"
+        app:cpb_color="@color/app_main_color"
+        android:visibility="gone"
+        android:indeterminateOnly="false"/>
+
+
+    <ImageView
+        android:id="@+id/iv_err"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_gravity="center"
+        android:src="@drawable/ic_no_network"
+         android:visibility="gone"
+     />
+
+
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@id/tv_load_err"
+            style="@style/Text_fourteensp"
+            android:layout_marginTop="5dip"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/err_loading"
+            android:textColor="@color/text_gery_color" />
+
+</LinearLayout>

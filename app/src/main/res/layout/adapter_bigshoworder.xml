@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_sel"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ll_cover"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="left|bottom" >
+
+        <ImageView
+            android:id="@+id/adapter_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/adapter_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/fab__gradient__down"
+            android:padding="@dimen/layout_padding_small"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/layout_padding_small"
+        android:paddingLeft="@dimen/layout_padding_small"
+        android:paddingRight="@dimen/layout_padding_small"
+        android:paddingTop="@dimen/layout_padding_small" >
+
+        <com.meidebi.app.ui.view.roundedview.RoundedImageView
+            android:id="@+id/adapter_user_avatar"
+            android:layout_width="@dimen/avantar_size"
+            android:layout_height="@dimen/avantar_size"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10.0dip"
+            app:border_color="@color/grey"
+            app:border_width="1dip"
+            app:corner_radius="360.0dip" />
+
+        <TextView
+            android:id="@+id/adapter_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/adapter_user_avatar"
+            android:textColor="@color/text_gery_color" />
+
+        <TextView
+            android:id="@+id/adapter_post_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adapter_user_name"
+            android:layout_toRightOf="@id/adapter_user_avatar"
+            android:textColor="@color/text_gery_color" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/adapter_content"
+        style="@style/Text_fourteensp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adapter_title"
+        android:background="@color/white"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:lineSpacingExtra="6dip"
+        android:maxLines="6"
+        android:paddingLeft="@dimen/layout_padding_small"
+        android:paddingRight="@dimen/layout_padding_small"
+        android:textColor="#545454" />
+
+    <RelativeLayout
+        android:id="@+id/ll_like"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adapter_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingBottom="@dimen/layout_padding"
+        android:paddingLeft="@dimen/layout_padding_small"
+        android:paddingRight="@dimen/layout_padding_small"
+        android:paddingTop="@dimen/layout_padding_small" >
+
+        <TextView
+            android:id="@+id/adapter_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="22.0dip"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/ic_detail_good_sel"
+            android:drawablePadding="8dip"
+            android:text="已赞"
+            android:textColor="@color/text_gery_color" />
+
+        <TextView
+            android:id="@+id/adapter_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_padding_small"
+            android:layout_toRightOf="@id/adapter_like"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/ic_detail_comment_sel"
+            android:drawablePadding="8dip"
+            android:text="评论"
+            android:textColor="@color/text_gery_color" />
+
+        <TextView
+            android:id="@+id/action_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/white"
+            android:text="查看详情"
+            android:textColor="@color/text_gery_color" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="20dip"
+        android:background="#e0e0e0" />
+
+</LinearLayout>

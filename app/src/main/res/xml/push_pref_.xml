@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:holo="http://schemas.android.com/apk/res-auto" >
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="push_on"
+        android:summaryOff="@string/pref_close"
+        android:summaryOn="@string/pref_open"
+        android:title="开启推送" />
+    <!--<CheckBoxPreference-->
+        <!--android:defaultValue="true"-->
+        <!--android:key="push_aimode"-->
+        <!--android:title="@string/pref_push_aimode" />-->
+    <!--<PreferenceCategory android:title="@string/pref_cat_content" >-->
+    <Preference
+        android:key="push_content"
+        android:title="@string/pref_push_content" >
+    </Preference>
+
+    <!--<CheckBoxPreference-->
+    <!--android:defaultValue="true"-->
+    <!--android:key="push_recent_price"-->
+    <!--android:title="@string/pref_push_recent" />-->
+
+    <!--<CheckBoxPreference-->
+    <!--android:defaultValue="true"-->
+    <!--android:key="push_history_price"-->
+    <!--android:title="@string/pref_push_histroy" />-->
+
+    <CheckBoxPreference
+        android:defaultValue="close"
+        android:key="push_loc"
+        android:title="@string/pref_push_loc" />
+    <!--</PreferenceCategory>-->
+    <PreferenceCategory android:title="@string/pref_cat_push_profiles" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="push_sound"
+            android:summaryOff="@string/pref_close"
+            android:summaryOn="@string/pref_open"
+            android:title="@string/pref_push_sound_open" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="push_vibrate"
+            android:summaryOff="@string/pref_close"
+            android:summaryOn="@string/pref_open"
+            android:title="@string/pref_push_vb" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="push_selientime"
+            android:title="@string/pref_push_selient_time" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

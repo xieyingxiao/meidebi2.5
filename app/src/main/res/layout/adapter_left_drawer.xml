@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_adapter_left_drawer_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_listitem_drawer_selector"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="9dip" >
+
+    <ImageView
+        android:id="@+id/iv_adapter_left_drawer_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dip"
+        android:layout_marginRight="13dip"
+        android:src="@drawable/iv_guide_point_normal" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2322"
+        android:textColor="@drawable/tv_drawer_sel"
+        android:textSize="18dip" />
+
+</LinearLayout>

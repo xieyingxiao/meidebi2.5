@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+     >
+    <TextView
+        style="@style/Text_elvensp"
+        android:layout_width="fill_parent"
+        android:textColor="@color/text_gery_color"
+        android:layout_marginBottom="@dimen/layout_padding"
+         android:text="请在下方选择您愿意接受的推送信息分类"
+        android:gravity="center_horizontal"
+        />
+    <View
+         android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/gery_bg"
+        />
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/common_recy"
+    android:clipToPadding="false"
+    android:layout_width="fill_parent"
+    android:layout_height="250dip"
+     />
+</LinearLayout>

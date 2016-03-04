@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab_bottom_bg"
+    android:orientation="vertical" >
+ <FrameLayout
+        android:layout_marginTop="?actionBarSize"
+        android:id="@id/common_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/tab_height"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding"
+        android:background="@color/tab_bottom_bg" >
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv_pick_choose_album"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+              android:gravity="center_vertical"
+            android:text="选择相册" />
+
+
+        <TextView
+            android:layout_toRightOf="@id/tv_pick_choose_album"
+            android:layout_marginLeft="@dimen/layout_padding"
+            android:id="@+id/tv_pick_image_priview"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+             android:gravity="center"
+            android:text="预览" />
+
+
+        <info.hoang8f.widget.FButton
+             android:id="@+id/btn_pick_select_yes"
+            android:layout_width="100dip"
+            android:layout_height="fill_parent"
+             android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+            android:layout_alignParentRight="true"
+            android:text="完成"
+            fab:buttonColor = "@color/btn_red_normal"
+            fab:cornerRadius="2dip"
+            fab:shadowEnabled="false"
+            android:textSize="16.0sp"
+            android:textColor="@color/white" />
+     </RelativeLayout>
+    <include layout="@layout/toolbar"/>
+
+</RelativeLayout>
+
+
+
+

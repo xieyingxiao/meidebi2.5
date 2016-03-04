@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/Layout_Parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/toolbar"/>
+
+     <TextView android:textColor="@color/black" android:id="@id/tv_add_province" android:background="@color/lightgray" android:padding="14.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="省" />
+    <TextView android:textColor="@color/black" android:id="@id/tv_add_city" android:background="@color/whitesmoke" android:padding="14.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="省" />
+    <TextView android:textColor="@color/black" android:id="@id/tv_add_town" android:background="@color/whitesmoke" android:padding="14.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="省" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/commonfragment" />
+        <ViewStub
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@id/common_layout_loading"
+            android:layout="@layout/common_loading"  />
+    </FrameLayout>
+</LinearLayout>

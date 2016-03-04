@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/layout_padding"
+    android:paddingRight="@dimen/layout_padding"
+    android:layout_marginTop="@dimen/layout_padding_small"
+    android:layout_marginBottom="@dimen/layout_padding_small"
+      android:orientation="vertical">
+
+
+
+
+    <TextView
+        android:id="@+id/tv_coupon_detail_title"
+        style="@style/Text_eightteensp"
+        android:text="title"
+        />
+
+    <TextView
+        android:layout_marginTop="@dimen/layout_padding_small"
+
+        android:id="@+id/tv_coupon_detail_price"
+        style="@style/Text_eightteensp"
+        android:text="@string/msg_coupon_price"
+        android:textColor="@color/text_orage_color" />
+
+
+    <TextView
+        android:layout_marginTop="@dimen/layout_padding_small"
+
+        android:id="@+id/tv_mycoupon_pass"
+        style="@style/Text_eightteensp"
+        android:textColor="@color/text_orage_color"
+        android:textSize="25sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_marginTop="@dimen/layout_padding_small"
+
+        android:id="@+id/tv_coupon_limit_whole"
+        style="@style/Text_fourteensp"
+        android:text="@string/msg_coupon_the_whole"
+        android:textColor="@color/text_gery_color" />
+
+    <TextView
+        android:layout_marginTop="@dimen/layout_padding_small"
+
+        android:id="@+id/tv_coupon_buy_level"
+        style="@style/Text_fourteensp"
+        android:text="@string/msg_coupon_level"
+        android:textColor="@color/text_gery_color" />
+
+
+    <TextView
+        android:layout_marginTop="@dimen/layout_padding_small"
+
+        android:id="@+id/tv_coupon_limit_new"
+        style="@style/Text_fourteensp"
+        android:text="@string/msg_coupon_limit_the_new"
+        android:textColor="@color/text_gery_color" />
+
+
+
+    <TextView
+        android:layout_marginTop="@dimen/layout_padding_small"
+
+        android:id="@+id/tv_coupon_get_end_time"
+        style="@style/Text_fourteensp"
+        android:text="@string/msg_coupon_get_end_time"
+         android:textColor="@color/text_gery_color" />
+
+
+
+
+
+    <TextView
+        android:layout_marginTop="@dimen/layout_padding_small"
+
+        android:id="@+id/tv_coupon_use_start_time"
+        style="@style/Text_fourteensp"
+        android:text="@string/msg_coupon_use_time"
+        android:textColor="@color/text_gery_color" />
+
+
+    <TextView
+        android:layout_marginTop="@dimen/layout_padding_small"
+
+        android:id="@+id/tv_coupon_use_end_time"
+        style="@style/Text_fourteensp"
+        android:text="@string/msg_coupon_use_end_time"
+        android:textColor="@color/text_gery_color" />
+
+
+</LinearLayout>

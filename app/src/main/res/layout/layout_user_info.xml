@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/layout_padding"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/ll_avantar"
+        android:layout_width="@dimen/avantar_large_size"
+        android:layout_height="@dimen/avantar_large_size" >
+
+        <com.meidebi.app.ui.view.roundedview.RoundedImageView
+            android:id="@id/iv_menu_avatar"
+            android:layout_width="@dimen/avantar_large_size"
+            android:layout_height="@dimen/avantar_large_size"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/iv_no_avantar"
+            app:border_color="@color/grey"
+            app:border_width="1dip"
+            app:corner_radius="360.0dip" />
+
+        <ImageView
+            android:id="@+id/iv_msg_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/iv_msg_num" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@id/ll_avantar"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@id/tv_menu_goto_login"
+                style="@style/Text_menuLeftText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="@string/menu_login"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@id/tv_menu_user_lv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_menu_goto_login"
+                android:layout_below="@id/tv_menu_goto_login"
+                android:layout_marginTop="7dip"
+                android:background="@drawable/btn_white_red_normal"
+                android:focusableInTouchMode="false"
+                android:paddingBottom="2.5dip"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:paddingTop="2.5dip"
+                android:textColor="@color/titlebar_bg"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@id/ll_menu_user_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dip"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@id/tv_menu_user_money"
+                    style="@style/Text_twelvesp"
+                    android:paddingRight="5.0dip"
+                    android:textColor="#838383" />
+
+                <TextView
+                    android:id="@id/tv_menu_user_credits"
+                    style="@style/Text_twelvesp"
+                    android:paddingLeft="5.0dip"
+                    android:textColor="#838383" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

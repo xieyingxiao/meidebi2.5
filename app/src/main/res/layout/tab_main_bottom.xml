@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@drawable/tab_bg"
+    android:layout_gravity="bottom"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_height="@dimen/tab_height">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+     >
+
+    <RadioButton
+        android:checked="true"
+        android:id="@+id/tab_main"
+        android:text="@string/tab_main"
+        style="@style/tab_main_bottom"
+        android:drawableTop="@drawable/ic_tab_youhui"
+         />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <RadioButton
+            android:text="@string/tab_show"
+            android:id="@+id/tab_show"
+            style="@style/tab_main_bottom"
+            android:drawableTop="@drawable/ic_tab_ordershow"
+            />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <RadioButton
+             android:text="@string/tab_coupon"
+
+            android:id="@+id/tab_coupon"
+            style="@style/tab_main_bottom"
+            android:drawableTop="@drawable/ic_tab_coupon"
+            />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <RadioButton
+            android:text="@string/tab_me"
+            android:id="@+id/tab_me"
+            style="@style/tab_main_bottom"
+            android:drawableTop="@drawable/ic_tab_mine"
+            />
+        <ImageView
+            android:id="@+id/iv_msg_num"
+            android:layout_gravity="center|top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_padding"
+            android:layout_marginTop="2dp"
+
+            android:src="@drawable/iv_msg_num"
+            android:visibility="gone"
+            />
+    </FrameLayout>
+</LinearLayout>

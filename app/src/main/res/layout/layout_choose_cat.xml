@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffeaeaea" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_marginBottom="7.0dip" android:text="@string/cat_website_chanel" style="@style/Text_fourteensp" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout style="@style/Layout_CatChoseLayout">
+                <CheckBox android:id="@id/view_radio_all" android:checked="true" android:text="@string/view_cat_all" style="@style/Cb_CatChoseCb" />
+            </FrameLayout>
+            <FrameLayout style="@style/Layout_CatChoseLayout">
+                <CheckBox android:id="@id/view_radio_single" android:text="@string/view_cat_single" style="@style/Cb_CatChoseCb" />
+            </FrameLayout>
+            <FrameLayout style="@style/Layout_CatChoseLayout">
+                <CheckBox android:id="@id/view_radio_active" android:text="@string/view_cat_active" style="@style/Cb_CatChoseCb" />
+            </FrameLayout>
+            <FrameLayout style="@style/Layout_CatChoseLayout">
+                <CheckBox android:id="@id/view_radio_coupon" android:text="@string/view_cat_coupon" style="@style/Cb_CatChoseCb" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:layout_marginBottom="7.0dip" android:text="@string/cat_product_type" style="@style/Text_fourteensp" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout style="@style/Layout_CatChoseLayout">
+                <CheckBox android:id="@id/view_radio_alltype" android:checked="true" android:text="@string/view_cat_alltype" style="@style/Cb_CatChoseCb" />
+            </FrameLayout>
+            <FrameLayout style="@style/Layout_CatChoseLayout">
+                <CheckBox android:id="@id/view_radio_cat1" android:text="@string/view_cat_1" style="@style/Cb_CatChoseCb" />
+            </FrameLayout>
+            <FrameLayout style="@style/Layout_CatChoseLayout">
+                <CheckBox android:id="@id/view_radio_cat2" android:text="@string/view_cat_2" style="@style/Cb_CatChoseCb" />
+            </FrameLayout>
+            <FrameLayout style="@style/Layout_CatChoseLayout">
+                <CheckBox android:id="@id/view_radio_cat3" android:text="@string/view_cat_3" style="@style/Cb_CatChoseCb" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout style="@style/Layout_CatChoseLayout">
+                <CheckBox android:id="@id/view_radio_cat4" android:text="@string/view_cat_4" style="@style/Cb_CatChoseCb" />
+            </FrameLayout>
+            <FrameLayout style="@style/Layout_CatChoseLayout">
+                <CheckBox android:id="@id/view_radio_cat5" android:text="@string/view_cat_5" style="@style/Cb_CatChoseCb" />
+            </FrameLayout>
+            <FrameLayout style="@style/Layout_CatChoseLayout">
+                <CheckBox android:id="@id/view_radio_cat6" android:text="@string/view_cat_6" style="@style/Cb_CatChoseCb" />
+            </FrameLayout>
+            <FrameLayout style="@style/Layout_CatChoseLayout">
+                <CheckBox android:id="@id/view_radio_cat7" android:text="@string/view_cat_7" style="@style/Cb_CatChoseCb" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout style="@style/Layout_CatChoseLayout">
+                <CheckBox android:id="@id/view_radio_cat8" android:text="@string/view_cat_8" style="@style/Cb_CatChoseCb" />
+            </FrameLayout>
+            <FrameLayout style="@style/Layout_CatChoseLayout">
+                <CheckBox android:id="@id/view_radio_cat9" android:text="@string/view_cat_9" style="@style/Cb_CatChoseCb" />
+            </FrameLayout>
+            <FrameLayout style="@style/Layout_CatChoseLayout">
+                <CheckBox android:id="@id/view_radio_cat10" android:text="@string/view_cat_10" style="@style/Cb_CatChoseCb" />
+            </FrameLayout>
+            <FrameLayout style="@style/Layout_CatChoseLayout">
+                <CheckBox android:id="@id/view_radio_cat11" android:text="@string/view_cat_11" style="@style/Cb_CatChoseCb" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/view_cat_btn_ok" android:background="@drawable/btn_blue_sel" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/make_sure" />
+    </LinearLayout>
+</LinearLayout>

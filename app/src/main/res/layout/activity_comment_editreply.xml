@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:background="@drawable/list_item_sel"
+    android:orientation="vertical" >
+<include layout="@layout/toolbar" />
+    <RelativeLayout
+        android:id="@id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" >
+
+        <include
+            android:id="@+id/_ll_quote"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="20dip"
+            layout="@layout/layout_comment_content" />
+
+        <com.meidebi.app.ui.view.DrawbleEditText
+            android:id="@id/et_comment_reply"
+            style="@style/ET_SingelInput"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/_ll_quote"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:drawableRight="@drawable/btn_clear_sel"
+            android:gravity="top|left|center"
+            android:hint="@string/comment_hint" />
+
+        <LinearLayout
+            android:id="@id/ll_bottom_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bottom_layout_height"
+            android:layout_alignParentBottom="true"
+            android:background="#ff3c3c3c"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@id/btn_comment_emo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="25.0dip"
+                android:drawablePadding="12.5dip"
+                android:drawableRight="@drawable/btn_openemo_sel"
+                android:text="@string/comment_use_emo"
+                android:textColor="@color/tv_gery_sel"
+                android:textSize="15.5sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.meidebi.app.ui.widget.EmoPicker
+        android:id="@id/emo_picker"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/ll_adapter_comment_content"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_comment_index"
+    android:orientation="vertical"
+    android:padding="7.5dip"
+    android:visibility="visible" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/Text_fifteensp"
+            android:text="@string/comment_from"
+            android:textColor="@color/text_gery_color" />
+
+        <TextView
+            android:id="@+id/tv_adapter_comment_quote_name"
+            style="@style/Text_fifteensp"
+            android:paddingLeft="7.5dip" />
+
+        <TextView
+             style="@style/Text_Commenttext"
+            android:paddingLeft="5.0dip"
+            android:text="@string/comment_from_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_adapter_quote_content"
+        style="@style/Text_Commenttext"
+        android:layout_width="fill_parent"
+        android:paddingTop="7.5dip" />
+
+    <TextView
+        android:id="@+id/tv_adapter_comment_quote_time_ago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_gery_color"
+        android:visibility="gone" />
+
+</LinearLayout>

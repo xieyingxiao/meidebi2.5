@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:layout_gravity="center_vertical"
+    android:paddingBottom="@dimen/layout_padding_small"
+    android:paddingTop="@dimen/layout_padding_small"
+    android:paddingLeft="@dimen/layout_padding"
+    android:paddingRight="@dimen/layout_padding"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/album_thumbnail"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+         android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scaleType="centerCrop"
+
+        />
+
+
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/album_name"
+            android:layout_toRightOf="@id/album_thumbnail"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center"
+            android:layout_marginLeft="@dimen/layout_padding"
+            android:layout_marginStart="10dp"
+            android:focusable="false"
+           style="@style/Text_sixteensp"
+            android:focusableInTouchMode="false"
+            android:text="Album name"
+
+              />
+
+        <TextView
+            android:layout_toRightOf="@id/album_name"
+            android:layout_centerVertical="true"
+            android:id="@+id/album_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="100"
+            android:layout_marginLeft="5dp"
+             style="@style/Text_sixteensp"
+
+
+
+    />
+
+
+</RelativeLayout>

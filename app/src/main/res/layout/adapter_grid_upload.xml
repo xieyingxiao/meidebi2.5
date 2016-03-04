@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meidebi.app.ui.view.SquareView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/layout_adapter_upload_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dip"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@id/iv_adapter_upload"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@id/iv_adapter_search_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="7.0dip"
+        android:background="@drawable/ic_close"
+        android:visibility="gone" />
+
+
+
+    <!--<android.support.v7.internal.widget.TintCheckBox-->
+        <!--android:id="@+id/cb_adapter_selected"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_margin="7.0dip"-->
+        <!--/>-->
+</com.meidebi.app.ui.view.SquareView>

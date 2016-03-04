@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guide_img_second_one"
+        android:layout_marginBottom="30dip"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guide_img_second_two" />
+
+    <info.hoang8f.widget.FButton
+         android:id="@+id/btn_guide_jump"
+        style="@style/Text_fifteensp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="8dip"
+        android:paddingLeft="60dip"
+        android:paddingRight="60dip"
+        android:paddingTop="8dip"
+        android:layout_marginTop="30dp"
+        android:text="@string/guide_use_soon"
+        android:textColor="@color/white"
+        app:buttonColor="#fd471f"
+        app:cornerRadius="22dip"
+        android:layout_marginBottom="20dip"
+        app:shadowEnabled="false" />
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:id="@id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0">
+
+        <LinearLayout
+            style="@style/commonfragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/ll_comment_submit"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="@dimen/bottom_layout_height"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="#ff3c3c3c"-->
+        <!--android:gravity="center" >-->
+
+        <!--<TextView-->
+        <!--android:id="@id/tv_comment_submit"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:drawableLeft="@drawable/ic_submit_comment_sel"-->
+        <!--android:drawablePadding="12.5dip"-->
+        <!--android:text="@string/comment_submit"-->
+        <!--android:textColor="@color/tv_gery_sel"-->
+        <!--android:textSize="15.5sp" />-->
+        <!--</LinearLayout>-->
+        <RelativeLayout
+            android:id="@+id/ll_et"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bottom_tab_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/tab_bottom_bg"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/divider_height"
+                android:layout_alignParentTop="true"
+                android:background="@color/tab_divider" />
+
+            <ImageButton
+                android:id="@+id/btn_comment_emo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/layout_padding"
+                android:background="@null"
+                android:src="@drawable/btn_openemo_sel" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btn_comment_send"
+                android:layout_width="60dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dip"
+                android:layout_marginRight="@dimen/layout_padding"
+                android:layout_marginTop="5dip"
+                android:gravity="center"
+                android:text="@string/send"
+                android:textColor="@color/white"
+                android:textSize="16.0sp"
+                app:buttonColor="@color/btn_red_normal"
+                app:cornerRadius="2dip"
+                app:shadowEnabled="false" />
+
+            <EditText
+                android:id="@+id/et_comment_reply"
+                style="@style/ET_SingelInput_small"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/layout_padding_small"
+                android:layout_marginRight="@dimen/layout_padding_small"
+                android:layout_toLeftOf="@id/btn_comment_send"
+                android:layout_toRightOf="@id/btn_comment_emo"
+                android:hint="@string/comment_hint"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <com.meidebi.app.ui.widget.EmoPicker
+        android:id="@id/emo_picker"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/et_comment_reply"
+        android:visibility="gone" />
+</LinearLayout>

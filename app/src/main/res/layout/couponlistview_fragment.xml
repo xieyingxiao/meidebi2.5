@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+     android:layout_height="fill_parent" >
+
+
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_marginTop="?actionBarSize"
+             android:id="@+id/ptr_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             android:background="@color/app_bg" >
+
+            <com.github.ksoichiro.android.observablescrollview.ObservableRecyclerView
+                android:scrollbars="vertical"
+                android:id="@+id/common_recyclerview"
+                android:clipToPadding="false"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+            />
+       </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ImageView
+        android:id="@+id/iv_srcoll_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="25dip"
+        android:src="@drawable/btn_scroll_top"
+        android:visibility="gone" />
+
+
+
+    <ViewStub
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@id/common_layout_loading"
+        android:layout="@layout/common_loading"
+        android:visibility="visible" />
+    <include layout="@layout/toolbar"/>
+
+
+</FrameLayout>

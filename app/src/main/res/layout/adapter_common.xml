@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/layout_padding_small"
+        android:paddingRight="@dimen/layout_padding_small"
+         android:background="@drawable/bg_common_list_item" >
+
+        <TextView
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip"
+                android:paddingTop="@dimen/layout_padding_small"
+                android:paddingBottom="@dimen/layout_padding_small"
+            android:id="@android:id/text1"
+            android:layout_centerVertical="true"
+            android:text="222"
+            style="@style/Text_sixteensp"
+              />
+
+        <ImageView
+            android:id="@+id/iv_msg_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@android:id/text1"
+            android:src="@drawable/iv_msg_num"
+            android:visibility="gone" />
+
+        <ImageView
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/list_goto"
+            android:visibility="visible" />
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/divider_height"
+            android:background="@color/list_divider" />
+    </RelativeLayout>
+

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_adapter_ordershow"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_sel"
+    android:orientation="horizontal"
+    android:padding="12.5dip" >
+
+    <FrameLayout
+        android:layout_width="92.5dip"
+        android:layout_height="92.5dip" >
+
+        <ImageView
+            android:id="@+id/adapter_ordershow_img"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="12.5dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_adapter_writer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_adapter_writer"
+                android:layout_width="@dimen/avantar_small_size"
+                android:layout_height="@dimen/avantar_small_size"
+                android:layout_marginRight="5dip"
+                android:src="@drawable/menu_avatar" />
+
+            <TextView
+                android:id="@+id/tv_adapter_writer"
+                style="@style/Text_tensp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/adapter_ordershow_tx_title"
+            style="@style/Text_mainListTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignLeft="@+id/ll_adapter_writer"
+            android:layout_above="@+id/ll_adapter_writer"
+            android:layout_centerVertical="true" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/adapter_ordershow_tx_title"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/adapter_ordershow_tx_good"
+                    style="@style/Text_tensp"
+                    android:layout_marginLeft="22.0dip"
+                    android:drawableLeft="@drawable/ic_detail_good_sel"
+                    android:drawablePadding="8dip"
+                    android:gravity="center_vertical"
+                    android:textColor="#828282" />
+
+                <TextView
+                    android:id="@+id/adapter_ordershow_tx_comment"
+                    style="@style/Text_tensp"
+                    android:layout_marginLeft="22.0dip"
+                    android:drawableLeft="@drawable/ic_detail_comment_sel"
+                    android:drawablePadding="8dip"
+                    android:gravity="center_vertical"
+                    android:textColor="#828282" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

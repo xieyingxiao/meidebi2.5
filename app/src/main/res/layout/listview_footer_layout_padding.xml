@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_bg"
+     android:paddingBottom="@dimen/padding_bottom_tab_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="horizontal" >
+
+    <fr.castorflex.android.circularprogressbar.CircularProgressBar
+        android:id="@id/refresh"
+        android:layout_width="30.5dp"
+        android:layout_height="30.5dp"
+         android:indeterminate="true"
+        android:layout_marginTop="@dimen/layout_padding_small"
+        android:layout_gravity="center_horizontal"
+        android:visibility="visible"
+        app:cpb_color="@color/app_main_color"
+        android:indeterminateOnly="false"/>
+
+
+
+    <TextView
+        android:layout_marginTop="@dimen/layout_padding_small"
+        android:textColor="@color/text_gery_color"
+        android:id="@id/listview_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:gravity="center_horizontal" />
+
+</FrameLayout>

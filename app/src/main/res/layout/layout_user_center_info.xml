@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="65dip"
+    android:paddingTop="65dip"
+    android:gravity="center"
+    android:background="@color/black"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+    <com.meidebi.app.ui.view.roundedview.RoundedImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/iv_user_avatar"
+        android:layout_width="@dimen/avantar_large_size"
+        android:layout_height="@dimen/avantar_large_size"
+        android:src="@drawable/menu_avatar"
+        app:border_color="@color/grey"
+        app:border_width="1dip"
+        android:layout_marginBottom="14dip"
+        app:corner_radius="360.0dip" />
+
+    <ImageView
+        android:visibility="visible"
+        android:id="@+id/iv_change_avantar"
+        android:src="@drawable/iv_user_take_photo"
+        android:layout_width="10dip"
+        android:layout_height="10dip"
+        android:layout_gravity="bottom|right"
+        android:layout_alignBottom="@id/iv_user_avatar"
+        android:layout_alignRight="@id/iv_user_avatar"
+        />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_name"
+        android:layout_below="@id/iv_user_avatar"
+        android:layout_marginBottom="@dimen/layout_padding"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:visibility="visible"
+        android:id="@+id/tv_user_name"
+        style="@style/Text_fifteensp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="yonghumign"
+         android:textColor="@color/white"
+        />
+    <TextView
+        android:visibility="visible"
+         android:layout_alignBottom="@id/tv_user_name"
+        android:layout_width="15dip"
+        android:layout_height="15dip"
+        android:text="55"
+        android:id="@+id/tv_user_score"
+         android:textSize="6.5sp"
+         android:layout_toRightOf="@id/tv_user_name"
+        android:gravity="bottom|right"
+        android:background="@drawable/tv_user_lv"
+        android:layout_marginLeft="7.5dip"
+        android:textColor="@color/white"
+        />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_core"
+         android:layout_below="@id/ll_name"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+
+
+        android:visibility="visible"
+        android:id="@+id/tv_user_core"
+        style="@style/Text_fourteensp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:text="积分"
+        android:textColor="@color/white"
+        />
+
+
+
+
+    <TextView
+         android:visibility="visible"
+        android:layout_below="@id/tv_user_name"
+        android:id="@+id/tv_user_money"
+        style="@style/Text_fourteensp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="铜币"
+        android:layout_toRightOf="@id/tv_user_core"
+        android:layout_marginLeft="@dimen/layout_padding"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+
+        />
+
+</LinearLayout>
+    <info.hoang8f.widget.FButton
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17.5dip"
+        android:layout_below="@id/ll_core"
+        android:padding="13.0dip"
+        android:text="签到得铜币，好礼等你换"
+        android:paddingLeft="27.5dip"
+        android:paddingRight="27.5dip"
+        android:paddingTop="11dip"
+        android:paddingBottom="11dip"
+        android:textColor="@color/white"
+        app:buttonColor = "#fd7a0e"
+        app:cornerRadius="22dip"
+        app:shadowEnabled="false"
+        style="@style/Text_fifteensp"
+
+        />
+
+
+
+
+
+</LinearLayout>

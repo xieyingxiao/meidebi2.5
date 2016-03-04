@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Parent"
+    android:orientation="vertical" >
+<include layout="@layout/toolbar"/>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@id/layout_about_logo_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="27.5dip"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/about_logo" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17.5dip"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/Text_fourteensp"
+                        android:text="当前版本：" />
+
+                    <TextView
+                        style="@style/Text_fourteensp"
+                        android:text="@string/versioname" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="11.5dip"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/list_divider" />
+
+                <RelativeLayout
+                    android:id="@id/version_update"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="11.5dip" >
+
+                    <TextView
+                        style="@style/Text_about"
+                        android:text="@string/version_update" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/list_divider" />
+
+                <RelativeLayout
+                    android:id="@id/about_legalnotice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="11.5dip" >
+
+                    <TextView
+                        style="@style/Text_about"
+                        android:text="@string/about_usernotice" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/list_goto" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/list_divider" />
+
+                <RelativeLayout
+                    android:id="@id/about_privacypolicy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="11.5dip" >
+
+                    <TextView
+                        style="@style/Text_about"
+                        android:text="@string/about_privacypolicy" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/list_goto" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/list_divider" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Text_tensp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="100.0dip"
+                android:text="@string/about_copyright_info"
+                android:textColor="#ff888888" />
+
+            <TextView
+                style="@style/Text_tensp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="26.0dip"
+                android:layout_marginTop="10.5dip"
+                android:text="@string/about_copyright"
+                android:textColor="#ff888888" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

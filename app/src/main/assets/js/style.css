@@ -1,0 +1,159 @@
+/* Reset */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	font-size: 100%;
+	list-style: none;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+
+	-webkit-text-size-adjust: none;
+	-webkit-tap-highlight-color: #880077D9;
+	
+		font: normal 16px/2 simsun;
+		word-wrap: break-word;
+
+	/*overflow: hidden;*/
+	color: #777777;
+	text-shadow: 0 1px 0 #fff;
+	text-align: left;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup, footer, header, nav, section, audio, video {
+	position: relative;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img {
+	color: transparent;
+	font-size: 0;
+	vertical-align: middle;
+	-ms-interpolation-mode: bicubic;
+}
+
+.clear {
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both
+}
+
+.clearfix {
+	zoom: 1
+}
+
+/* Anchors */
+
+a {
+	color: #105CB6;
+}
+
+/* Background */
+
+html {
+	background: transparent;
+}
+
+
+#topic {
+	color: #666;
+	padding: 0.5em 1em 2em 1em;
+}
+#content {
+	padding: 1em 1em 1em 1em;
+}
+/* Common */
+
+strong, b {
+	font-weight: bold;
+}
+
+i {
+	font-style: italic;
+}
+
+ul, ol {
+	margin: 0 0 0 .9em;
+}
+
+ul li {
+	list-style: disc outside none;
+}
+
+ol li {
+	list-style: decimal outside none;
+}
+
+li {
+	margin: .5em 0 .5em .5em;
+}
+
+ul + br,
+ol + br {
+	display: none;
+}
+
+blockquote, sup {
+	border-left: 3px solid #D0E5F2;
+	font-style: normal;
+	padding: 0 0 0 .5em;
+	margin: .5em 0;
+	display: block;
+	line-height: 70%;
+	vertical-align:baseline;
+	font-size: 100%;
+}
+
+time {
+	color: #999;
+	text-align: right;
+	display: block;
+	margin-top: 45px;
+}
+
+#content img,
+#topic img {
+	max-width: 100%;
+	margin: 10px 0;
+}
+
+img[eeimg] {
+max-width: 100%;
+vertical-align: middle;
+}
+
+img[eeimg="1"] {
+display: inline-block;
+margin: 0 3px;
+}
+
+img[eeimg="2"] {
+margin: 10px auto;
+ }
+
+img {
+     /* keep aspect ratio, use max width */
+     max-width:100%;
+     height:auto;
+     display: block;
+     margin:auto;
+ }
+

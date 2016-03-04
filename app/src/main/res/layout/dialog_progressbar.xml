@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/layout_padding_small"
+
+     >
+
+
+    <fr.castorflex.android.circularprogressbar.CircularProgressBar
+        android:id="@id/refresh"
+        android:layout_width="35.5dp"
+        android:layout_height="35.5dp"
+        android:indeterminate="true"
+        android:layout_gravity="center_horizontal"
+        android:visibility="visible"
+        app:cpb_color="@color/app_main_color"
+        app:cpb_stroke_width="4dp"
+        android:indeterminateOnly="false"/>
+
+     <TextView
+         android:layout_gravity="center_vertical"
+         android:layout_marginLeft="@dimen/md_neutral_button_margin"
+         android:id="@+id/tv_dialog_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/md_content_textsize"
+        android:text="Content" />
+</LinearLayout>

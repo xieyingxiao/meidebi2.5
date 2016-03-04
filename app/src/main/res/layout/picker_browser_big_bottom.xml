@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingLeft="@dimen/layout_padding"
+    android:paddingRight="@dimen/layout_padding"
+    android:background="@color/tab_bottom_bg"
+    android:id="@+id/layout_bottom"
+     android:layout_height="@dimen/tab_height">
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:id="@+id/tv_browser_postion"
+           style="@style/Text_sixteensp"
+            android:textColor="@color/text_orage_color"
+            android:text="2"
+        />
+    <TextView
+        android:layout_centerVertical="true"
+        android:id="@+id/tv_browser_total"
+         android:layout_toRightOf="@id/tv_browser_postion"
+         style="@style/Text_sixteensp"
+        android:layout_alignTop="@id/tv_browser_postion"
+         />
+
+    <info.hoang8f.widget.FButton
+        android:visibility="gone"
+        android:id="@+id/btn_pick_select_yes"
+        android:layout_width="100dip"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_alignParentRight="true"
+        android:text="完成"
+        fab:buttonColor = "@color/btn_red_normal"
+        fab:cornerRadius="2dip"
+        fab:shadowEnabled="false"
+        android:textSize="16.0sp"
+        android:textColor="@color/white" />
+</RelativeLayout>

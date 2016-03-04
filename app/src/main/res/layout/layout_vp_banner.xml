@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_banner"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:visibility="gone" >
+
+    <com.meidebi.app.ui.view.LoopViewPager
+        android:id="@+id/common_vp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_vp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/layout_padding_small"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+    </LinearLayout>
+
+
+</FrameLayout>

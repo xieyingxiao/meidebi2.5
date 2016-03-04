@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/cb_browser"
+        android:layout_width="27dip"
+        android:layout_height="27dip"
+        android:layout_margin="@dimen/layout_padding"
+        android:button="@drawable/cb_img_seleted_sel" />
+</FrameLayout>

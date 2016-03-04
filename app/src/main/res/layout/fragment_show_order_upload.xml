@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <com.meidebi.app.ui.view.CleanableEditText
+        android:id="@+id/et_show_order"
+        style="@style/ET_SingelInput"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:layout_gravity="center_vertical"
+        android:background="@null"
+        android:cursorVisible="true"
+        android:drawableRight="@drawable/btn_clear_sel"
+        android:gravity="top|left|center"
+        android:singleLine="false"
+        android:hint="晒晒这次购物的心情吧" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="@dimen/layout_padding_small"
+        android:paddingLeft="11dip"
+        android:paddingRight="11dip"
+        android:layout_below="@id/et_show_order"
+        android:id="@+id/common_recyclerview"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/tab_height"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding"
+        android:background="@color/tab_bottom_bg" >
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_show_save"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="存为草稿" />-->
+
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btn_show_send"
+            android:layout_width="100dip"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+            android:layout_alignParentRight="true"
+            android:text="发布晒单"
+            fab:buttonColor = "@color/btn_red_normal"
+            fab:cornerRadius="2dip"
+            fab:shadowEnabled="false"
+            android:textSize="16.0sp"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</RelativeLayout>

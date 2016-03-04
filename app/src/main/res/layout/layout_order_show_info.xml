@@ -1,0 +1,61 @@
+
+ <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dip"
+         android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.meidebi.app.ui.view.roundedview.RoundedImageView
+             android:id="@+id/iv_msg_writer_avantar"
+            android:layout_width="@dimen/avantar_size"
+            android:layout_height="@dimen/avantar_size"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/iv_no_avantar"
+            app:corner_radius="360.0dip" />
+
+
+        <TextView
+            android:id="@id/tv_msg_detail_nickname"
+            style="@style/Text_fifteensp"
+            android:layout_alignTop="@id/iv_msg_writer_avantar"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@id/iv_msg_writer_avantar"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_msg_detail_time"
+            style="@style/Text_fifteensp"
+            android:layout_below="@id/tv_msg_detail_nickname"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@id/iv_msg_writer_avantar"
+            android:textColor="@color/text_gery_color" />
+
+
+        <TextView
+            android:layout_marginTop="@dimen/layout_padding"
+            android:layout_marginBottom="@dimen/layout_padding"
+            android:layout_below="@id/iv_msg_writer_avantar"
+            android:id="@id/tv_msg_detail_sitename"
+            style="@style/Text_fourteensp"
+            android:textColor="@color/text_gery_color"
+            android:visibility="visible" />
+
+        <View
+             android:layout_below="@id/tv_msg_detail_sitename"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/divider_height"
+            android:background="#eaeaea"
+            android:id="@+id/view" />
+
+        <LinearLayout
+            android:id="@+id/ll_ordershow_buylist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+
+    </RelativeLayout>

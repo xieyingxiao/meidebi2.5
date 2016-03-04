@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/mainFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/md_dialog_frame_margin"
+        android:layout_marginLeft="@dimen/md_dialog_frame_margin"
+        android:layout_marginRight="@dimen/md_dialog_frame_margin"
+        android:layout_marginTop="@dimen/md_dialog_frame_margin"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/titleFrame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/md_dialog_frame_margin"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/umeng_update_wifi_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/md_icon_margin"
+                android:scaleType="fitXY"
+                android:src="@drawable/umeng_update_wifi_disable" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/UMUpdateTitle"
+                android:textSize="@dimen/md_title_textsize" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/umeng_update_id_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/umeng_update_button_close_bg_selector"
+            android:focusable="true"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:id="@+id/contentScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false">
+
+            <TextView
+                android:id="@+id/umeng_update_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/md_content_textsize"
+                tools:text="Content" />
+
+        </ScrollView>
+
+        <CheckBox
+            android:id="@+id/umeng_update_id_check"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/UMIgnore"
+            android:textColor="@color/accent_material_light" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/buttonDefaultFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/md_button_frame_vertical_padding"
+        android:layout_marginRight="@dimen/md_button_padding_frame_side">
+
+        <Button
+            android:id="@+id/umeng_update_id_ignore"
+            style="@style/MD_ActionButton"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/md_neutral_button_margin"
+            android:text="@string/UMIgnore"
+            android:visibility="invisible" />
+
+
+        <Button
+            android:id="@+id/umeng_update_id_cancel"
+            style="@style/MD_ActionButton"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/md_btn_selector"
+            android:text="@string/UMNotNow"
+            android:textColor="@color/accent_material_light" />
+
+        <Button
+            android:id="@+id/umeng_update_id_ok"
+            style="@style/MD_ActionButton"
+            android:layout_marginRight="@dimen/md_neutral_button_margin"
+            android:layout_toLeftOf="@id/umeng_update_id_cancel"
+            android:background="@drawable/md_btn_selector"
+            android:text="@string/UMUpdateNow"
+            android:textColor="@color/accent_material_light" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

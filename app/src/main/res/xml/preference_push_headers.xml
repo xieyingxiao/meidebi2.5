@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <header android:title="@string/push_loc" android:summary="header 1's summary" describeContents="1" />
+    <header android:title="@string/view_cat_1" android:summary="header 2's summary" describeContents="1" />
+    <header android:title="@string/view_cat_2" android:summary="header 2's summary" describeContents="3" />
+    <header android:title="@string/view_cat_3" android:summary="header 2's summary" describeContents="2" />
+    <header android:title="@string/view_cat_4" android:summary="header 2's summary" describeContents="48" />
+    <header android:title="@string/view_cat_5" android:summary="header 2's summary" describeContents="4" />
+    <header android:title="@string/view_cat_6" android:summary="header 2's summary" describeContents="52" />
+    <header android:title="@string/view_cat_7" android:summary="header 2's summary" describeContents="6" />
+    <header android:title="@string/view_cat_8" android:summary="header 2's summary" describeContents="54" />
+    <header android:title="@string/view_cat_9" android:summary="header 2's summary" describeContents="55" />
+    <header android:title="@string/view_cat_10" android:summary="header 2's summary" describeContents="56" />
+    <header android:title="@string/view_cat_11" android:summary="header 2's summary" describeContents="91" />
+</preference-headers>

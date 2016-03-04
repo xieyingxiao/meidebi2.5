@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textColor="@color/black" android:id="@id/tv_adapter_address" android:padding="20.0dip" style="@style/Text_about"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

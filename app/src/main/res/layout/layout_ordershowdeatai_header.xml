@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <FrameLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:id="@+id/ll_img"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom" >
+
+        <ImageView
+            android:transitionName="cover"
+            android:id="@+id/cover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@id/tv_msg_detail_title"
+            style="@style/Text_twentyesp"
+            android:layout_width="fill_parent"
+            android:layout_gravity="bottom"
+            android:background="@drawable/fab__gradient__down"
+            android:padding="20dip"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="visible" />
+    </FrameLayout>
+
+
